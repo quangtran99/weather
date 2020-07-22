@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  height: 100%;
+  background-color: black;
+}
+
+.finding {
+  display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
