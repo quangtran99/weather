@@ -4,7 +4,7 @@ import "./App.css"
 import { Button } from 'react-bootstrap';
 
 
-const apikey = process.env.REACT_APP_APIKEY
+const apikey = "b3bf5d0d00dd188060dcd4cbf225a73c"
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class App extends Component {
   }
 
   async getWeather(latitude, longitude) {
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=b3bf5d0d00dd188060dcd4cbf225a73c&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apikey}&units=metric`;
     let response = await fetch(url);
     let data = await response.json();
     this.setState({
@@ -48,7 +48,7 @@ class App extends Component {
   //
 
   callWeather = async (name) => {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=b3bf5d0d00dd188060dcd4cbf225a73c&units=metric`
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${apikey}&units=metric`
     let response = await fetch(url);
     let data = await response.json()
 
