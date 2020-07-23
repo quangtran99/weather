@@ -4,9 +4,9 @@ import "./App.css"
 import { Button } from 'react-bootstrap';
 
 
-// const apikey = "b3bf5d0d00dd188060dcd4cbf225a73c"
+const apikey = "b3bf5d0d00dd188060dcd4cbf225a73c"
 
-const apikey = process.env.REACT_APP_APIKEY
+// const apikey = process.env.REACT_APP_APIKEY
 
 class App extends Component {
   constructor(props) {
